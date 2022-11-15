@@ -2,17 +2,17 @@ import {FaLaptopCode} from 'react-icons/fa';
 
 function Header() {
     return (
-      <div className="Header container mx-auto mt-3 font-semibold inline-flex space-x-40">
-        <h1 className='text-5xl'><FaLaptopCode className='inline-block text-red-400 mr-3 mb-0.5'/>Julio Juarez</h1>
-        <ul className='flex text-lg space-x-10 mt-4'>
+      <div className="container font-semibold inline-flex flex-1 bg-violet-900 text-zinc-100 drop-shadow-lg">
+        <a className='no-underline' href='#home' ><h1 className='text-5xl'><FaLaptopCode className='inline-block mr-3 mb-1'/></h1></a>
+        <ul className='inline-flex flex-1 justify-center text-lg space-x-20 mt-3'>
             <li>
-                Home
+                <a className="no-underline" href="#resume">Resume</a>
             </li>
             <li>
-                About
+                <a className="no-underline" href="#projects">Projects</a>
             </li>
             <li>
-                Contact
+                <a className="no-underline" href="#contact">Contact</a>
             </li>
         </ul>
       </div>
