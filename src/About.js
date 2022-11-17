@@ -1,3 +1,5 @@
+import { SiLinkedin, SiGithub } from "react-icons/si";
+
 function calculateExperience() {
   var today = new Date().getFullYear();
   return Math.abs(today - 2018);
@@ -5,7 +7,7 @@ function calculateExperience() {
 
 function About() {
   return (
-    <div className="bg-blue-800 flex flex-row" name="home">
+    <div className="bg-blue-800 flex flex-row" id="home">
       <div className="flex flex-col mr-10 mx-10">
         <div className="flex flex-row mr-20 mr-0.5 mb-5">
           <div className="text-2xl text-zinc-100">
@@ -19,8 +21,16 @@ function About() {
           <div className="text-5xl text-yellow-400 bp">
             <h1>Julio "JJ" Juarez</h1>
           </div>
-          <div className="text-2xl text-zinc-100 mb-5">
-            <h2>Software Engineer</h2>
+          <div className="text-2xl text-zinc-100 mb-4">
+            <h2 className="flex flex-row">
+              Software Engineer
+              <a href="https://github.com/jjuarez5">
+                <SiGithub className="hover:text-yellow-400 mx-1" />
+              </a>
+              <a href="https://www.linkedin.com/in/juliojuarez713/">
+                <SiLinkedin className="hover:text-yellow-400 mx-1" />
+              </a>
+            </h2>
           </div>
           <div className="flex flex-col py-1 text-zinc-100 text-justify">
             <p>

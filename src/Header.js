@@ -2,7 +2,7 @@ import { FaLaptopCode } from "react-icons/fa";
 
 function Header() {
   return (
-    <div className="container font-semibold inline-flex flex-1 bg-blue-900 text-zinc-100 drop-shadow-lg">
+    <div className="container sticky -top-0 z-0 font-semibold inline-flex flex-1 bg-blue-900 text-zinc-100 p-1 drop-shadow-lg">
       <a className="no-underline" href="#home">
         <h1 className="text-5xl">
           <FaLaptopCode className="inline-block mx-1 mr-3 mb-2 hover:text-yellow-400" />
