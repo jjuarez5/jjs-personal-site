@@ -54,7 +54,7 @@ function Resume() {
           </p>
         </div>
       </section>
-      <div id="experience" className="text-md mx-2 ">
+      <div id="experience" className="text-md mr-10 mx-10 text-center">
         <h3 className="text-lg text-yellow-400">Microsoft</h3>
         <h4 className="text-md">Software Engineer II</h4>
         <h5 className="text-md">June 2018-Present</h5>

@@ -71,7 +71,7 @@ function Contact() {
         </form>
       </div>
       <p className="text-center text-gray-500 text-xs">
-        &copy;2022 Julio Juarez. All rights reserved.
+        &copy;{new Date().getFullYear()} Julio Juarez. All rights reserved.
       </p>
     </div>
   );
