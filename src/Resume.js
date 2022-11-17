@@ -12,19 +12,19 @@ import {
 
 function Resume() {
   return (
-    <div className="bg-blue-900 text-zinc-100 ">
+    <div className="container bg-blue-900 text-zinc-100" id="resume">
       <h1 className="text-5xl text-center">Resume</h1>
       <h2 className="text-2xl text-center">Skills</h2>
-      <section className="mb-5 text-4xl mx-5">
-        <div className="grid grid-cols-3 gap-4 justify-center">
-          <p>
+      <section className="mb-5 text-4xl mx-5 flex justify-center">
+        <div className="grid grid-cols-3 gap-10">
+          <p className="text-yellow-400">
             <SiMicrosoftazure /> Azure
           </p>
           <p>
             <SiAzuredevops />
             Azure Devops
           </p>
-          <p>
+          <p className="text-yellow-400">
             <SiAzurepipelines />
             Azure Pipelines
           </p>
@@ -32,7 +32,7 @@ function Resume() {
             <SiDotnet />
             .NET
           </p>
-          <p>
+          <p className="text-yellow-400">
             <SiCsharp />
             C#
           </p>
@@ -40,7 +40,7 @@ function Resume() {
             <SiHtml5 />
             HTML5
           </p>
-          <p>
+          <p className="text-yellow-400">
             <SiCss3 />
             CSS3
           </p>
@@ -48,7 +48,7 @@ function Resume() {
             <SiTailwindcss />
             Tailwind CSS
           </p>
-          <p>
+          <p className="text-yellow-400">
             <SiJavascript />
             Javascript
           </p>
@@ -81,6 +81,16 @@ function Resume() {
           the technical skills needed to become a cloud applications developer.
           <br />
           Skills taught include C#, Azure, ASP.NET, T-SQL.
+        </p>
+        <br />
+        <h3 className="text-lg text-yellow-400">United States Navy</h3>
+        <h4 className="text-md">Petty Officer 2nd Class</h4>
+        <h5 className="text-md">June 2011 - February 2018</h5>
+        <p className="text-base font-mono mb-1">
+          Active Duty Aviation Electrician's Mate specializing on both the
+          C-130T Hercules and P3-C Orion. Qualified as a line-maintenance
+          technician <br />
+          as well as a Collateral Duty Inspector.
         </p>
         <br />
       </div>
