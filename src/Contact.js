@@ -8,9 +8,8 @@ function Contact() {
         <form
           className="pt-6 pb-8 mb-4"
           name="contact"
-          method="post"
-          netlify
-          netlify-honeypot="bot-field"
+          method="POST"
+          data-netlify="true"
         >
           <input type="hidden" name="form-name" value="contact" />
           <div className="mb-4">
