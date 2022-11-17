@@ -12,7 +12,7 @@ import {
 
 function Resume() {
   return (
-    <div className="container bg-blue-900 text-zinc-100" id="resume">
+    <div className="bg-blue-900 text-zinc-100" id="resume">
       <h1 className="text-5xl text-center">Resume</h1>
       <h2 className="text-2xl text-center">Skills</h2>
       <section className="mb-5 text-4xl mx-5 flex justify-center">

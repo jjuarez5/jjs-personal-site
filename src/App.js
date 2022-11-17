@@ -5,7 +5,7 @@ import Contact from "./Contact";
 
 function App() {
   return (
-    <div className="container font-bebas">
+    <div className="font-bebas">
       <Header />
       <About />
       <Resume />
