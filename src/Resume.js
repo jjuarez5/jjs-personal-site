@@ -59,11 +59,14 @@ function Resume() {
         <h4 className="text-md">Software Engineer II</h4>
         <h5 className="text-md">June 2018-Present</h5>
         <p className="text-base font-mono mb-1">
-          Created and maintained 3 sets of cloud-hosted web services and
-          technical documentation for external consupmtion using .NET Core,
-          <br />
-          Azure, and a NoSql database.The main service averages 1 million
-          requests per month with less than a second average response time.
+          Developed and maintained a set of web services for external learning
+          partners to upload/modify course offerings to be displayed on the MS
+          Learn platform,
+          <br /> track learner enrollments, as well as onboard new learning
+          partners and learning events, each with CRUD operations. Created
+          technical documentation for API use
+          <br /> and consumption. Modified legacy web applications to achieve a
+          minimum internal accessibility criterion.
         </p>
         <br />
         <h3 className="text-lg text-yellow-400">
@@ -72,15 +75,19 @@ function Resume() {
         <h4 className="text-md">Student</h4>
         <h5 className="text-md">January 2018 - May 2018</h5>
         <p className="text-base font-mono mb-1">
+          Obtained the Microsoft Technology Associate (MTA 98-361) as
+          pre-requisite for an 18-week technical program developed by
           <a
             href="https://military.microsoft.com/mssa/"
             className="underline hover:text-yellow-400"
           >
-            A 18-week technical program designed to train military veterans
-          </a>{" "}
-          the technical skills needed to become a cloud applications developer.
+            {" "}
+            Microsoft for transitioning military veterans
+          </a>
+          .
           <br />
-          Skills taught include C#, Azure, ASP.NET, T-SQL.
+          Learned the fundamentals of C#, T-SQL, and ASP.NET. Pair-programmed a
+          console-based game named “Space-Invaders 1983”.
         </p>
         <br />
         <h3 className="text-lg text-yellow-400">United States Navy</h3>
@@ -88,9 +95,9 @@ function Resume() {
         <h5 className="text-md">June 2011 - February 2018</h5>
         <p className="text-base font-mono mb-1">
           Active Duty Aviation Electrician's Mate specializing on both the
-          C-130T Hercules and P3-C Orion. Qualified as a line-maintenance
-          technician <br />
-          as well as a Collateral Duty Inspector.
+          C-130T Hercules and P3-C Orion.
+          <br /> Qualified as a line-maintenance technician as well as a
+          Collateral Duty Inspector.
         </p>
         <br />
       </div>
