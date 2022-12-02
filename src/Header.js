@@ -26,6 +26,14 @@ function Header() {
         <li>
           <AnchorLink
             className="no-underline hover:text-yellow-400"
+            href="#portfolio"
+          >
+            Portfolio
+          </AnchorLink>
+        </li>
+        <li>
+          <AnchorLink
+            className="no-underline hover:text-yellow-400"
             href="#contact"
           >
             Contact
