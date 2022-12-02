@@ -5,20 +5,15 @@ function Contact() {
         Contact
       </h1>
       <div className="flex justify-center">
-        <form
-          className="pt-6 pb-8 mb-4"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-        >
-          <input type="hidden" name="form-name" value="contact" />
+        <form className="pt-6 pb-8 mb-4" name="contact" method="post">
           <div className="mb-4">
+            <input type="hidden" name="contact" value="contact" />
             <label className="text-zinc-100 text-lg mb-2" for="name">
               Name:
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
-              id="contactName"
+              name="contactName"
               type="text"
               placeholder="Name"
             />
@@ -29,7 +24,7 @@ function Contact() {
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
-              id="contactPhone"
+              name="contactPhone"
               type="tel"
               placeholder="xxx-xxx-xxxx"
             />
@@ -40,7 +35,7 @@ function Contact() {
             </label>
             <input
               className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
-              id="contactEmail"
+              name="contactEmail"
               type="email"
               placeholder="email@something.com"
             />
@@ -49,12 +44,11 @@ function Contact() {
             <label className="block text-zinc-100 text-lg mb-2" for="message">
               Message
             </label>
-            <input
+            <textarea
               className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
-              id="message"
-              type="textarea"
-              placeholder="Message"
-            />
+              name="message"
+              placeholder="Type your message here..."
+            ></textarea>
           </div>
           <div className="flex items-center justify-center">
             <button
