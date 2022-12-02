@@ -4,7 +4,7 @@ function Portfolio() {
       <h1 className="text-5xl text-center">Portfolio</h1>
       <div className="flex flex-row justify-end">
         <div className="py-5 flex flex-col">
-          <h3 className="text-3xl text-yellow-400 px-3">
+          <h3 className="text-3xl text-yellow-400 px-3 text-center">
             <a
               className="hover:underline"
               href="https://github.com/jjuarez5/Space-Explorer-Console-App-Game"
@@ -28,7 +28,7 @@ function Portfolio() {
           </p>
         </div>
         <div className="py-5 flex flex-col">
-          <h3 className="text-3xl text-yellow-400 px-3">
+          <h3 className="text-3xl text-yellow-400 px-3 text-center">
             <a className="hover:underline" href="https://www.themaneallure.com">
               TheManeAllure.com
             </a>
@@ -42,7 +42,7 @@ function Portfolio() {
           </p>
         </div>
         <div className="py-5 flex flex-col">
-          <h3 className="text-3xl text-yellow-400 px-3">
+          <h3 className="text-3xl text-yellow-400 px-3 text-center">
             <a className="hover:underline" href="#home">
               juliojuarez.io
             </a>
