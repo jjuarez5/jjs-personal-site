@@ -33,7 +33,7 @@ function About() {
             </h2>
           </div>
           <div className="flex flex-row py-1 mb-5 text-zinc-100 text-justify">
-            <p className="w-6/12">
+            <p>
               I have {calculateExperience()} years of experience in the software
               engineering industry, primarily as a back-end web developer. Over
               the past four years, I have created and maintained cloud-hosted

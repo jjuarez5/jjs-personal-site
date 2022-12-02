@@ -2,8 +2,8 @@ function Portfolio() {
   return (
     <div className="bg-blue-800 text-zinc-100" id="portfolio">
       <h1 className="text-5xl text-center">Portfolio</h1>
-      <div className="flex flex-row justify-end">
-        <div className="py-5 flex flex-col">
+      <section className="text-center">
+        <div className="py-5">
           <h3 className="text-3xl text-yellow-400 px-3 text-center">
             <a
               className="hover:underline"
@@ -27,7 +27,7 @@ function Portfolio() {
             on the title of this section.
           </p>
         </div>
-        <div className="py-5 flex flex-col">
+        <div className="py-5 ">
           <h3 className="text-3xl text-yellow-400 px-3 text-center">
             <a className="hover:underline" href="https://www.themaneallure.com">
               TheManeAllure.com
@@ -41,7 +41,7 @@ function Portfolio() {
             clicking on the title of this section.
           </p>
         </div>
-        <div className="py-5 flex flex-col">
+        <div className="py-5 ">
           <h3 className="text-3xl text-yellow-400 px-3 text-center">
             <a className="hover:underline" href="#home">
               juliojuarez.io
@@ -53,10 +53,11 @@ function Portfolio() {
             CSS to showcase skills that I'm learning, as well as my previous and
             current experience. I love to code and solve problems by coding as
             well, so please feel free to reach out to me via the contact form
-            below. 💻👨🏽‍💻⌨️🖱️🌐
+            below.
+            <br /> 💻👨🏽‍💻⌨️🖱️🌐
           </p>
         </div>
-      </div>
+      </section>
     </div>
   );
 }
