@@ -7,7 +7,7 @@ function Contact() {
       <div className="flex justify-center">
         <form className="pt-6 pb-8 mb-4" name="contact" method="post">
           <div className="mb-4">
-            <input type="hidden" name="contact" value="contact" />
+            <input type="hidden" name="form-name" value="contact" />
             <label className="text-zinc-100 text-lg mb-2" for="name">
               Name:
             </label>
