@@ -2,6 +2,7 @@ import Header from "./Header";
 import About from "./About";
 import Resume from "./Resume";
 import Contact from "./Contact";
+import Portfolio from "./Portfolio";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <About />
       <Resume />
+      <Portfolio />
       <Contact />
     </div>
   );
