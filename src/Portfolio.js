@@ -9,7 +9,7 @@ function Portfolio() {
               className="hover:underline"
               href="https://github.com/jjuarez5/Space-Explorer-Console-App-Game"
             >
-              SpaceExplorer 1983
+              Space Explorer 1983
             </a>
           </h3>
           <p className="px-3">
