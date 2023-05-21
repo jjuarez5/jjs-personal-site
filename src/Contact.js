@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="text-zinc-100 bg-blue-900 text-center" id="contact">
+    <div className="text-zinc-100 bg-purple-900 text-center" id="contact">
       <h1 className="text-5xl text-center flex flex-col justify-center">
         Contact
       </h1>
@@ -52,7 +52,7 @@ function Contact() {
           </div>
           <div className="flex items-center justify-center">
             <button
-              className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-purple-500 hover:bg-purple-700 text-white py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               type="submit"
             >
               Send
