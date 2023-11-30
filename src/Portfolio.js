@@ -7,6 +7,25 @@ function Portfolio() {
           <h3 className="text-3xl text-blue-400 px-3 text-center">
             <a
               className="hover:underline"
+              href="https://github.com/jjuarez5/FAQBot"
+            >
+              OpenAI FAQBot
+            </a>
+          </h3>
+          <p className="px-3">
+            An OpenAI powered Frequently Asked Questions (FAQ)/ Chat bot. I
+            leveraged Chat GPT to act as a virtual assistant for my wife's
+            business. By creating an effective prompt and harvesting the power
+            of Chat GPT, I'm able to save her time by answering a lot of common
+            questions her clients may have about hair care, products, servicing,
+            and pricing. This was a challenging yet fun project as I started off
+            by creating my own class library until I found a suitable SDK.
+          </p>
+        </div>
+        <div className="py-5">
+          <h3 className="text-3xl text-blue-400 px-3 text-center">
+            <a
+              className="hover:underline"
               href="https://github.com/jjuarez5/Space-Explorer-Console-App-Game"
             >
               Space Explorer 1983
@@ -30,15 +49,16 @@ function Portfolio() {
         <div className="py-5 ">
           <h3 className="text-3xl text-blue-400 px-3 text-center">
             <a className="hover:underline" href="https://www.themaneallure.com">
-              TheManeAllure.com
+              TheManeAllure.com (with an OpenAI integrated assistant)
             </a>
           </h3>
           <p className="px-3">
             I built this website with HTML5 and CSS3 for my wife's business, as
             she is a hair colorist!💇🏽‍♀️💅🏽 I came up with the design and color
             scheme and put my front-end knowledge to the test after reading a
-            book on front-end web development. You can navigate to the site by
-            clicking on the title of this section.
+            book on front-end web development. I also integrated OpenAI api's to
+            create a virtual assistant! You can navigate to the site and try it
+            out by clicking on the title of this section.
           </p>
         </div>
         <div className="py-5 ">
