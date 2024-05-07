@@ -65,9 +65,10 @@ function Resume() {
         <h4 className="text-md">Software Engineer II</h4>
         <h5 className="text-md">June 2018-Present</h5>
         <p className="text-base font-mono mb-1">
-          Developed and maintained a set of web services for external learning
-          partners to upload/modify course offerings to be displayed on the MS
-          Learn platform,
+          Co-owned the 2nd most highly trafficked web services capable of
+          handling 1M calls per month for external learning partners to
+          upload/modify course offerings to be displayed on the MS Learn
+          platform,
           <br /> track learner enrollments, as well as onboard new learning
           partners and learning events, each with CRUD operations. Created
           technical documentation for API use
