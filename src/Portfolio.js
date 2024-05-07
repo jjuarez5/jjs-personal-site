@@ -1,10 +1,10 @@
 function Portfolio() {
   return (
-    <div className="bg-purple-800 text-zinc-100" id="portfolio">
+    <div className=" bg-zinc-100 text-center shadow-inner pt-5" id="portfolio">
       <h1 className="text-5xl text-center">Portfolio</h1>
       <section className="text-center">
         <div className="py-5">
-          <h3 className="text-3xl text-blue-400 px-3 text-center">
+          <h3 className="text-3xl text-purple-400 px-3 text-center">
             <a
               className="hover:underline"
               href="https://github.com/jjuarez5/FAQBot"
@@ -23,7 +23,7 @@ function Portfolio() {
           </p>
         </div>
         <div className="py-5">
-          <h3 className="text-3xl text-blue-400 px-3 text-center">
+          <h3 className="text-3xl text-purple-400 px-3 text-center">
             <a
               className="hover:underline"
               href="https://github.com/jjuarez5/Space-Explorer-Console-App-Game"
@@ -37,7 +37,7 @@ function Portfolio() {
             described as similar to "The Oregon Trail", except better, because
             me and{" "}
             <a
-              className="underline text-blue-400"
+              className="underline text-purple-400"
               href="https://www.linkedin.com/in/gwilsondaytona/"
             >
               Greg Wilson
@@ -47,7 +47,7 @@ function Portfolio() {
           </p>
         </div>
         <div className="py-5 ">
-          <h3 className="text-3xl text-blue-400 px-3 text-center">
+          <h3 className="text-3xl text-purple-400 px-3 text-center">
             <a className="hover:underline" href="https://www.themaneallure.com">
               TheManeAllure.com (with an OpenAI integrated assistant)
             </a>
@@ -62,7 +62,7 @@ function Portfolio() {
           </p>
         </div>
         <div className="py-5 ">
-          <h3 className="text-3xl text-blue-400 px-3 text-center">
+          <h3 className="text-3xl text-purple-400 px-3 text-center">
             <a className="hover:underline" href="#home">
               juliojuarez.io
             </a>

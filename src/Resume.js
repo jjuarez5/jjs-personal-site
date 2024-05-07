@@ -12,19 +12,22 @@ import {
 
 function Resume() {
   return (
-    <div className="bg-purple-900 text-zinc-100" id="resume">
+    <div
+      className="bg-zinc-100 text-black shadow-inner pt-5 border-y-2 border-zinc-300"
+      id="resume"
+    >
       <h1 className="text-5xl text-center">Resume</h1>
       <h2 className="text-2xl text-center">Skills</h2>
       <section className="mb-5 text-4xl mx-5 flex justify-center" id="skills">
         <div className="grid grid-cols-3 gap-10">
-          <p className="text-blue-400">
+          <p className="text-purple-400">
             <SiMicrosoftazure /> Azure
           </p>
           <p>
             <SiAzuredevops />
             Azure Devops
           </p>
-          <p className="text-blue-400">
+          <p className="text-purple-400">
             <SiAzurepipelines />
             Azure Pipelines
           </p>
@@ -32,7 +35,7 @@ function Resume() {
             <SiDotnet />
             .NET
           </p>
-          <p className="text-blue-400">
+          <p className="text-purple-400">
             <SiCsharp />
             C#
           </p>
@@ -40,7 +43,7 @@ function Resume() {
             <SiHtml5 />
             HTML5
           </p>
-          <p className="text-blue-400">
+          <p className="text-purple-400">
             <SiCss3 />
             CSS3
           </p>
@@ -48,14 +51,17 @@ function Resume() {
             <SiTailwindcss />
             Tailwind CSS
           </p>
-          <p className="text-blue-400">
+          <p className="text-purple-400">
             <SiJavascript />
             Javascript
           </p>
         </div>
       </section>
-      <div id="experience" className="text-md mr-10 mx-10 text-center">
-        <h3 className="text-lg text-blue-400">Microsoft</h3>
+      <div
+        id="experience"
+        className="text-md mr-10 mx-10 text-center text-black p-5"
+      >
+        <h3 className="text-lg text-purple-400">Microsoft</h3>
         <h4 className="text-md">Software Engineer II</h4>
         <h5 className="text-md">June 2018-Present</h5>
         <p className="text-base font-mono mb-1">
@@ -69,7 +75,7 @@ function Resume() {
           minimum internal accessibility criterion.
         </p>
         <br />
-        <h3 className="text-lg text-blue-400">
+        <h3 className="text-lg text-purple-400">
           Microsoft Software & Systems Academy - Cloud Applications Developer
         </h3>
         <h4 className="text-md">Student</h4>
@@ -79,7 +85,7 @@ function Resume() {
           pre-requisite for an 18-week technical program developed by
           <a
             href="https://military.microsoft.com/mssa/"
-            className="underline hover:text-blue-400"
+            className="underline hover:text-purple-400"
           >
             {" "}
             Microsoft for transitioning military veterans
@@ -90,7 +96,7 @@ function Resume() {
           console-based game named “Space-Invaders 1983”.
         </p>
         <br />
-        <h3 className="text-lg text-blue-400">United States Navy</h3>
+        <h3 className="text-lg text-purple-400">United States Navy</h3>
         <h4 className="text-md">Petty Officer 2nd Class</h4>
         <h5 className="text-md">June 2011 - February 2018</h5>
         <p className="text-base font-mono mb-1">

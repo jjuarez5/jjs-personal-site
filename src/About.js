@@ -7,32 +7,35 @@ function calculateExperience() {
 
 function About() {
   return (
-    <div className="bg-purple-800 flex flex-row" id="home">
+    <div
+      className="bg-zinc-100 flex flex-row border-y-2 border-zinc-300"
+      id="home"
+    >
       <div className="flex flex-col mr-10 mx-10">
         <div className="flex flex-row mr-20 mr-0.5 mb-5 mt-5">
-          <div className="text-2xl text-zinc-100">
+          <div className="text-2xl text-black">
             <h2>Hello,</h2>
           </div>
-          <div className="text-2xl text-blue-400 mx-1">
+          <div className="text-2xl text-purple-400 mx-1">
             <h2>my name is</h2>
           </div>
         </div>
         <div className="flex flex-col px-1">
-          <div className="text-5xl text-blue-400 bp">
+          <div className="text-5xl text-purple-400 bp">
             <h1>Julio "JJ" Juarez</h1>
           </div>
-          <div className="text-2xl text-zinc-100 mb-4">
+          <div className="text-2xl text-black mb-4">
             <h2 className="flex flex-row">
               Software Engineer
               <a href="https://github.com/jjuarez5">
-                <SiGithub className="hover:text-blue-400 mx-1" />
+                <SiGithub className="hover:text-purple-400 mx-1" />
               </a>
               <a href="https://www.linkedin.com/in/juliojuarez713/">
-                <SiLinkedin className="hover:text-blue-400 mx-1" />
+                <SiLinkedin className="hover:text-purple-400 mx-1" />
               </a>
             </h2>
           </div>
-          <div className="flex flex-row py-1 mb-5 text-zinc-100 text-justify">
+          <div className="flex flex-row py-1 mb-5 text-black text-justify text-xl">
             <p>
               I have {calculateExperience()} years of experience in the software
               engineering industry, primarily as a back-end web developer. Over
