@@ -2,7 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;700&display=swap');
+
 @font-face {
     font-family: "Bebas Neue";
     src: url(../public/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+:root {
+  --orange: #ff6b00;
+  --orange-lt: #ff9500;
+  --orange-dim: rgba(255, 107, 0, 0.4);
+  --orange-faint: rgba(255, 107, 0, 0.08);
+  --white: #f0e8d8;
+  --dim: rgba(240, 232, 216, 0.45);
+  --dark: #080502;
+  --border: rgba(255, 107, 0, 0.2);
+  --border-dim: rgba(255, 107, 0, 0.08);
+  --glow: 0 0 15px rgba(255, 107, 0, 0.6), 0 0 30px rgba(255, 107, 0, 0.3);
+  --glow-sm: 0 0 8px rgba(255, 107, 0, 0.7);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #080502;
+  color: #f0e8d8;
+  font-family: 'IBM Plex Mono', monospace;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 107, 0, 0.035) 1px, transparent 0);
+  background-size: 28px 28px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.75) 100%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #080502; }
+::-webkit-scrollbar-thumb { background: rgba(255,107,0,0.3); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes statusBlink {
+  0%,100% { opacity:1; }
+  50%     { opacity:0.2; }
+}
+@keyframes cursorBlink {
+  0%,100% { opacity:1; }
+  50%     { opacity:0; }
+}
+@keyframes fillBar {
+  from { width: 0; }
 }

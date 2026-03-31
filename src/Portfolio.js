@@ -1,83 +1,112 @@
+const orange = "#ff6b00";
+const border = "rgba(255,107,0,0.2)";
+const borderDim = "rgba(255,107,0,0.08)";
+const white = "#f0e8d8";
+const dim = "rgba(240,232,216,0.45)";
+
+const projects = [
+  {
+    num: "01",
+    name: "OpenAI FAQBot",
+    desc: "An OpenAI-powered FAQ and chat bot built for my wife's hair business. Leveraged ChatGPT to answer common client questions about hair care, products, services, and pricing — saving real time every day.",
+    tags: ["OpenAI", "ChatGPT", "C#", "SDK"],
+    href: "https://github.com/jjuarez5/FAQBot",
+  },
+  {
+    num: "02",
+    name: "Space Explorer 1983",
+    desc: "A text-based console game built as a pair-programming project during my MSSA Cohort. Described as 'The Oregon Trail, except better' — co-authored with Greg Wilson.",
+    tags: ["C#", "Console App", "Game Dev"],
+    href: "https://github.com/jjuarez5/Space-Explorer-Console-App-Game",
+  },
+  {
+    num: "03",
+    name: "TheManeAllure.com",
+    desc: "Full website built with HTML5 & CSS3 for my wife's hair colorist business. Designed the layout and color scheme, then integrated an OpenAI virtual assistant to handle client inquiries.",
+    tags: ["HTML5", "CSS3", "OpenAI", "UI Design"],
+    href: "https://www.themaneallure.com",
+  },
+  {
+    num: "04",
+    name: "juliojuarez.io",
+    desc: "This site — a digital resume and portfolio built with React.js and Tailwind CSS. A living project to showcase what I'm learning and how I ship.",
+    tags: ["React", "Tailwind CSS", "Netlify"],
+    href: "#home",
+  },
+];
+
+function ProjectRow({ num, name, desc, tags, href, isLast }) {
+  return (
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "60px 1fr auto",
+        alignItems: "center",
+        gap: "32px",
+        padding: "28px 32px",
+        borderBottom: isLast ? "none" : `1px solid ${borderDim}`,
+        background: "rgba(15,8,3,0.5)",
+        transition: "background 0.3s, border-color 0.3s",
+        cursor: "pointer",
+      }}
+      onMouseEnter={e => {
+        e.currentTarget.style.background = "rgba(30,15,5,0.8)";
+        e.currentTarget.style.borderColor = border;
+        e.currentTarget.querySelector(".proj-num").style.color = orange;
+        e.currentTarget.querySelector(".proj-num").style.textShadow = "0 0 8px rgba(255,107,0,0.7)";
+        e.currentTarget.querySelector(".proj-arrow").style.color = orange;
+        e.currentTarget.querySelector(".proj-arrow").style.transform = "translateX(4px)";
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.background = "rgba(15,8,3,0.5)";
+        e.currentTarget.style.borderColor = borderDim;
+        e.currentTarget.querySelector(".proj-num").style.color = dim;
+        e.currentTarget.querySelector(".proj-num").style.textShadow = "none";
+        e.currentTarget.querySelector(".proj-arrow").style.color = "rgba(255,107,0,0.25)";
+        e.currentTarget.querySelector(".proj-arrow").style.transform = "translateX(0)";
+      }}
+      onClick={() => window.open(href, href.startsWith("#") ? "_self" : "_blank", "noreferrer")}
+    >
+      {/* Number */}
+      <div className="proj-num" style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: "11px", letterSpacing: "2px", color: dim, transition: "color 0.3s, text-shadow 0.3s" }}>
+        {num}
+      </div>
+
+      {/* Content */}
+      <div>
+        <div style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: "22px", fontWeight: 600, color: white, letterSpacing: "1px", marginBottom: "6px" }}>{name}</div>
+        <p style={{ fontSize: "11px", lineHeight: 1.8, color: dim, marginBottom: "12px" }}>{desc}</p>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+          {tags.map(t => (
+            <span key={t} style={{
+              fontSize: "8px", letterSpacing: "2px", textTransform: "uppercase",
+              padding: "3px 8px", border: `1px solid ${borderDim}`, color: "rgba(255,107,0,0.5)",
+            }}>{t}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* Arrow */}
+      <div className="proj-arrow" style={{ color: "rgba(255,107,0,0.25)", fontSize: "20px", transition: "color 0.3s, transform 0.3s" }}>→</div>
+    </div>
+  );
+}
+
 function Portfolio() {
   return (
-    <div className=" bg-zinc-100 text-center shadow-inner pt-5" id="portfolio">
-      <h1 className="text-5xl text-center">Portfolio</h1>
-      <section className="text-center">
-        <div className="py-5">
-          <h3 className="text-3xl text-purple-400 px-3 text-center">
-            <a
-              className="hover:underline"
-              href="https://github.com/jjuarez5/FAQBot"
-            >
-              OpenAI FAQBot
-            </a>
-          </h3>
-          <p className="px-3">
-            An OpenAI powered Frequently Asked Questions (FAQ)/ Chat bot. I
-            leveraged Chat GPT to act as a virtual assistant for my wife's
-            business. By creating an effective prompt and harvesting the power
-            of Chat GPT, I'm able to save her time by answering a lot of common
-            questions her clients may have about hair care, products, servicing,
-            and pricing. This was a challenging yet fun project as I started off
-            by creating my own class library until I found a suitable SDK.
-          </p>
-        </div>
-        <div className="py-5">
-          <h3 className="text-3xl text-purple-400 px-3 text-center">
-            <a
-              className="hover:underline"
-              href="https://github.com/jjuarez5/Space-Explorer-Console-App-Game"
-            >
-              Space Explorer 1983
-            </a>
-          </h3>
-          <p className="px-3">
-            A text-based game developed as a console application as a
-            pair-programming project during my MSSA Cohort. The game was
-            described as similar to "The Oregon Trail", except better, because
-            me and{" "}
-            <a
-              className="underline text-purple-400"
-              href="https://www.linkedin.com/in/gwilsondaytona/"
-            >
-              Greg Wilson
-            </a>{" "}
-            made it! 😜 You can find the repo and download the game by clicking
-            on the title of this section.
-          </p>
-        </div>
-        <div className="py-5 ">
-          <h3 className="text-3xl text-purple-400 px-3 text-center">
-            <a className="hover:underline" href="https://www.themaneallure.com">
-              TheManeAllure.com (with an OpenAI integrated assistant)
-            </a>
-          </h3>
-          <p className="px-3">
-            I built this website with HTML5 and CSS3 for my wife's business, as
-            she is a hair colorist!💇🏽‍♀️💅🏽 I came up with the design and color
-            scheme and put my front-end knowledge to the test after reading a
-            book on front-end web development. I also integrated OpenAI api's to
-            create a virtual assistant! You can navigate to the site and try it
-            out by clicking on the title of this section.
-          </p>
-        </div>
-        <div className="py-5 ">
-          <h3 className="text-3xl text-purple-400 px-3 text-center">
-            <a className="hover:underline" href="#home">
-              juliojuarez.io
-            </a>
-          </h3>
-          <p className="px-3">
-            This is my personal website dedicated to serve as a digital resume
-            and portfolio. This website was built using React.js and Tailwind
-            CSS to showcase skills that I'm learning, as well as my previous and
-            current experience. I love to code and solve problems by coding as
-            well, so please feel free to reach out to me via the contact form
-            below.
-            <br /> 💻👨🏽‍💻⌨️🖱️🌐
-          </p>
-        </div>
-      </section>
+    <div id="portfolio" style={{ position: "relative", zIndex: 10, padding: "100px 80px", borderBottom: `1px solid ${border}` }}>
+
+      {/* Header */}
+      <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "60px" }}>
+        <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: "9px", letterSpacing: "4px", color: orange }}>02 //</span>
+        <div style={{ flex: 1, height: "1px", background: `linear-gradient(90deg, ${border}, transparent)` }} />
+        <h2 style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: "clamp(28px,4vw,48px)", fontWeight: 700, letterSpacing: "2px", color: white }}>PORTFOLIO</h2>
+      </div>
+
+      {/* Projects list */}
+      <div style={{ border: `1px solid ${borderDim}`, overflow: "hidden" }}>
+        {projects.map((p, i) => <ProjectRow key={p.num} {...p} isLast={i === projects.length - 1} />)}
+      </div>
     </div>
   );
 }
