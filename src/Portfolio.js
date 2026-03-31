@@ -97,10 +97,10 @@ function Portfolio() {
     <div id="portfolio" style={{ position: "relative", zIndex: 10, padding: "100px 80px", borderBottom: `1px solid ${border}` }}>
 
       {/* Header */}
-      <div style={{ display: "flex", alignItems: "center", gap: "16px", marginBottom: "60px" }}>
-        <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: "9px", letterSpacing: "4px", color: orange }}>02 //</span>
-        <div style={{ flex: 1, height: "1px", background: `linear-gradient(90deg, ${border}, transparent)` }} />
-        <h2 style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: "clamp(28px,4vw,48px)", fontWeight: 700, letterSpacing: "2px", color: white }}>PORTFOLIO</h2>
+      <div className="sec-hdr">
+        <span className="sec-num">02 //</span>
+        <div className="sec-line" />
+        <h2 className="sec-title">PORTFOLIO</h2>
       </div>
 
       {/* Projects list */}

@@ -75,3 +75,72 @@ body::after {
 @keyframes fillBar {
   from { width: 0; }
 }
+
+/* Responsive section headers */
+.sec-hdr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  margin-bottom: 40px;
+}
+.sec-num {
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: var(--orange);
+  white-space: nowrap;
+}
+.sec-line {
+  display: none;
+}
+.sec-title {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: clamp(22px, 5vw, 46px);
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--white);
+}
+@media (min-width: 768px) {
+  .sec-hdr {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    gap: 12px;
+  }
+  .sec-line {
+    display: block;
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(255,107,0,0.2), transparent);
+  }
+}
+
+/* Responsive section headers */
+@media (max-width: 639px) {
+  /* Applied via inline styles in components — handled by JS media query or parent layout */
+}
+
+.sec-hdr-responsive {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (min-width: 640px) {
+  .sec-hdr-responsive {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .sec-hdr-responsive .sec-line-resp {
+    display: block !important;
+  }
+}
+.sec-hdr-responsive .sec-line-resp {
+  display: none;
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255,107,0,0.2), transparent);
+}
