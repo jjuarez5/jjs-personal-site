@@ -101,7 +101,7 @@ function Contact() {
               marginBottom: "12px",
             }}
           >
-            // Let's Connect
+            {"// Let's Connect"}
           </p>
           <h3
             style={{
@@ -213,7 +213,7 @@ function Contact() {
                 <span style={{ color: orange }}>await</span> developer.hire();
               </div>
               <div style={{ color: "rgba(200,255,200,0.7)" }}>
-                // ✓ Request submitted
+                {"// ✓ Request submitted"}
               </div>
               <div style={{ color: dim }}>
                 <span style={{ color: orange }}>▸</span>

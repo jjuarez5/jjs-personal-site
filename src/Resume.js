@@ -15,6 +15,7 @@ const border = "rgba(255,107,0,0.2)";
 const borderDim = "rgba(255,107,0,0.08)";
 const white = "#f0e8d8";
 const dim = "rgba(240,232,216,0.45)";
+// eslint-disable-next-line no-unused-vars
 const dark = "#080502";
 
 const skills = [
@@ -240,7 +241,7 @@ function Resume() {
           marginBottom: "20px",
         }}
       >
-        // Skills & Technologies
+        {"// Skills & Technologies"}
       </p>
       <div
         style={{
@@ -265,7 +266,7 @@ function Resume() {
           marginBottom: "8px",
         }}
       >
-        // Experience
+        {"// Experience"}
       </p>
       <div style={{ borderTop: `1px solid ${borderDim}` }}>
         {experience.map((exp, i) => (
