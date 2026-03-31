@@ -1,7 +1,6 @@
 import {
   SiMicrosoftazure,
   SiAzuredevops,
-  SiAzurepipelines,
   SiDotnet,
   SiCsharp,
   SiHtml5,
