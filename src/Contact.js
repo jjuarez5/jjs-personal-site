@@ -52,7 +52,7 @@ function Contact() {
 
         {/* LEFT — terminal block */}
         <div>
-          <p style={{ fontSize: "9px", letterSpacing: "4px", color: orange, textTransform: "uppercase", marginBottom: "12px" }}>// Let's Connect</p>
+          <p style={{ fontSize: "9px", letterSpacing: "4px", color: orange, textTransform: "uppercase", marginBottom: "12px" }}>{"// Let's Connect"}</p>
           <h3 style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: "36px", fontWeight: 700, color: white, marginBottom: "16px", lineHeight: 1 }}>
             Build Something<br /><span style={{ color: orange }}>Together</span>
           </h3>
@@ -82,7 +82,7 @@ function Contact() {
               <div style={{ color: dim }}>{"}"}</div>
               <div style={{ color: dim }}>&nbsp;</div>
               <div style={{ color: dim }}><span style={{ color: orange }}>await</span> developer.hire();</div>
-              <div style={{ color: "rgba(200,255,200,0.7)" }}>// ✓ Request submitted</div>
+              <div style={{ color: "rgba(200,255,200,0.7)" }}>{"// ✓ Request submitted"}</div>
               <div style={{ color: dim }}>
                 <span style={{ color: orange }}>▸</span>
                 <span style={{

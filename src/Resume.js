@@ -8,7 +8,6 @@ const border = "rgba(255,107,0,0.2)";
 const borderDim = "rgba(255,107,0,0.08)";
 const white = "#f0e8d8";
 const dim = "rgba(240,232,216,0.45)";
-const dark = "#080502";
 
 const skills = [
   { icon: <SiMicrosoftazure />, name: "Azure", pct: 90 },
@@ -111,13 +110,13 @@ function Resume() {
       </div>
 
       {/* Skills */}
-      <p style={{ fontSize: "9px", letterSpacing: "4px", color: orange, textTransform: "uppercase", marginBottom: "20px" }}>// Skills & Technologies</p>
+      <p style={{ fontSize: "9px", letterSpacing: "4px", color: orange, textTransform: "uppercase", marginBottom: "20px" }}>{"// Skills & Technologies"}</p>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2px", marginBottom: "80px" }}>
         {skills.map(s => <SkillBar key={s.name} {...s} />)}
       </div>
 
       {/* Experience */}
-      <p style={{ fontSize: "9px", letterSpacing: "4px", color: orange, textTransform: "uppercase", marginBottom: "8px" }}>// Experience</p>
+      <p style={{ fontSize: "9px", letterSpacing: "4px", color: orange, textTransform: "uppercase", marginBottom: "8px" }}>{"// Experience"}</p>
       <div style={{ borderTop: `1px solid ${borderDim}` }}>
         {experience.map((exp, i) => (
           <ExpRow key={exp.org} {...exp} isLast={i === experience.length - 1} />
