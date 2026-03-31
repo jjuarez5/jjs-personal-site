@@ -38,12 +38,8 @@ const projects = [
 function ProjectRow({ num, name, desc, tags, href, isLast }) {
   return (
     <div
+      className="grid grid-cols-[1fr] md:grid-cols-[60px_1fr_auto] items-center gap-4 md:gap-8 p-5 md:px-8 md:py-7"
       style={{
-        display: "grid",
-        gridTemplateColumns: "60px 1fr auto",
-        alignItems: "center",
-        gap: "32px",
-        padding: "28px 32px",
         borderBottom: isLast ? "none" : `1px solid ${borderDim}`,
         background: "rgba(15,8,3,0.5)",
         transition: "background 0.3s, border-color 0.3s",
@@ -68,7 +64,7 @@ function ProjectRow({ num, name, desc, tags, href, isLast }) {
       onClick={() => window.open(href, href.startsWith("#") ? "_self" : "_blank", "noreferrer")}
     >
       {/* Number */}
-      <div className="proj-num" style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: "11px", letterSpacing: "2px", color: dim, transition: "color 0.3s, text-shadow 0.3s" }}>
+      <div className="proj-num hidden md:block" style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: "11px", letterSpacing: "2px", color: dim, transition: "color 0.3s, text-shadow 0.3s" }}>
         {num}
       </div>
 
@@ -87,14 +83,14 @@ function ProjectRow({ num, name, desc, tags, href, isLast }) {
       </div>
 
       {/* Arrow */}
-      <div className="proj-arrow" style={{ color: "rgba(255,107,0,0.25)", fontSize: "20px", transition: "color 0.3s, transform 0.3s" }}>→</div>
+      <div className="proj-arrow hidden md:block" style={{ color: "rgba(255,107,0,0.25)", fontSize: "20px", transition: "color 0.3s, transform 0.3s" }}>→</div>
     </div>
   );
 }
 
 function Portfolio() {
   return (
-    <div id="portfolio" style={{ position: "relative", zIndex: 10, padding: "100px 80px", borderBottom: `1px solid ${border}` }}>
+    <div id="portfolio" className="px-6 py-16 md:px-20 md:py-24" style={{ position: "relative", zIndex: 10, borderBottom: `1px solid ${border}` }}>
 
       {/* Header */}
       <div className="sec-hdr">

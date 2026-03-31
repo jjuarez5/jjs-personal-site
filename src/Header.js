@@ -6,7 +6,6 @@ const styles = {
     top: 0,
     zIndex: 100,
     height: "60px",
-    padding: "0 48px",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
@@ -45,7 +44,6 @@ const styles = {
   navRight: {
     display: "flex",
     alignItems: "center",
-    gap: "32px",
   },
   link: {
     fontFamily: "'IBM Plex Mono', monospace",
@@ -78,13 +76,13 @@ const styles = {
 
 function Header() {
   return (
-    <nav style={styles.nav}>
+    <nav style={styles.nav} className="px-4 md:px-12">
       <AnchorLink href="#home" style={styles.idBox}>
         <div style={styles.idSquare}>J</div>
-        <span style={styles.idText}>Julio Juarez</span>
+        <span style={styles.idText} className="hidden sm:inline">Julio Juarez</span>
       </AnchorLink>
 
-      <div style={styles.navRight}>
+      <div style={styles.navRight} className="gap-4 md:gap-8">
         <AnchorLink href="#resume" style={styles.link}
           onMouseEnter={e => { e.target.style.color = "#ff6b00"; e.target.style.textShadow = "0 0 8px rgba(255,107,0,0.7)"; }}
           onMouseLeave={e => { e.target.style.color = "rgba(240,232,216,0.5)"; e.target.style.textShadow = "none"; }}>

@@ -38,7 +38,7 @@ function Contact() {
   });
 
   return (
-    <div id="contact" style={{ position: "relative", zIndex: 10, padding: "100px 80px" }}>
+    <div id="contact" className="px-6 py-16 md:px-20 md:py-24" style={{ position: "relative", zIndex: 10 }}>
 
       {/* Header */}
       <div className="sec-hdr">
@@ -48,7 +48,7 @@ function Contact() {
       </div>
 
       {/* Two-column layout: terminal + form */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "80px", alignItems: "start" }}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20" style={{ alignItems: "start" }}>
 
         {/* LEFT — terminal block */}
         <div>
@@ -155,13 +155,8 @@ function Contact() {
       </div>
 
       {/* Footer */}
-      <div style={{
-        marginTop: "80px",
-        paddingTop: "32px",
+      <div className="mt-12 md:mt-20 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4" style={{
         borderTop: `1px solid ${borderDim}`,
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
       }}>
         <div style={{ fontFamily: "'Rajdhani', sans-serif", fontSize: "16px", fontWeight: 700, letterSpacing: "4px", color: orange, textShadow: "0 0 8px rgba(255,107,0,0.7)" }}>
           JULIO JUAREZ

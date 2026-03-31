@@ -73,11 +73,7 @@ function SkillBar({ icon, name, pct }) {
 
 function ExpRow({ org, role, dates, desc, link, isLast }) {
   return (
-    <div style={{
-      display: "grid",
-      gridTemplateColumns: "200px 1fr",
-      gap: "32px",
-      padding: "32px 0",
+    <div className="grid grid-cols-1 md:grid-cols-[200px_1fr] gap-2 md:gap-8 py-6 md:py-8" style={{
       borderBottom: isLast ? "none" : `1px solid ${borderDim}`,
     }}>
       <div>
@@ -100,7 +96,7 @@ function ExpRow({ org, role, dates, desc, link, isLast }) {
 
 function Resume() {
   return (
-    <div id="resume" style={{ position: "relative", zIndex: 10, padding: "100px 80px", borderBottom: `1px solid ${border}` }}>
+    <div id="resume" className="px-6 py-16 md:px-20 md:py-24" style={{ position: "relative", zIndex: 10, borderBottom: `1px solid ${border}` }}>
 
       {/* Section header */}
       <div className="sec-hdr">
@@ -111,7 +107,7 @@ function Resume() {
 
       {/* Skills */}
       <p style={{ fontSize: "9px", letterSpacing: "4px", color: orange, textTransform: "uppercase", marginBottom: "20px" }}>{"// Skills & Technologies"}</p>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "2px", marginBottom: "80px" }}>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[2px] mb-12 md:mb-20">
         {skills.map(s => <SkillBar key={s.name} {...s} />)}
       </div>
 

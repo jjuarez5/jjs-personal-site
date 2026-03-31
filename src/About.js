@@ -10,16 +10,12 @@ const s = {
     position: "relative",
     zIndex: 10,
     minHeight: "100vh",
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr",
     borderBottom: "1px solid rgba(255,107,0,0.15)",
   },
   left: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    padding: "80px 48px 80px 80px",
-    borderRight: "1px solid rgba(255,107,0,0.15)",
     animation: "fadeUp 0.6s 0.2s ease both",
   },
   tag: {
@@ -78,7 +74,6 @@ const s = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    padding: "80px 80px 80px 48px",
     animation: "slideInRight 0.8s 0.5s ease both",
   },
   idCard: {
@@ -204,9 +199,9 @@ const s = {
 
 function About() {
   return (
-    <div id="home" style={s.section}>
+    <div id="home" style={s.section} className="grid grid-cols-1 md:grid-cols-2">
       {/* LEFT */}
-      <div style={s.left}>
+      <div style={s.left} className="p-8 pt-20 md:py-20 md:pl-20 md:pr-12 md:border-r md:border-[rgba(255,107,0,0.15)]">
         <p style={s.tag}>▸ Portfolio / v2.0 / Online</p>
         <h1 style={s.name}>
           JULIO<br />
@@ -235,7 +230,7 @@ function About() {
       </div>
 
       {/* RIGHT — ID Card */}
-      <div style={s.right}>
+      <div style={s.right} className="px-8 pb-16 md:py-20 md:pl-12 md:pr-20">
         <div style={s.idCard}>
           <span style={s.idCardLabel}>IDENTITY VERIFIED</span>
 
